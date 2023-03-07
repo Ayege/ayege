@@ -19,12 +19,14 @@ return () => window.removeEventListener("load",handleLoading);
 },[])
 
 return !isLoading ? (
-  <div className="App">
-      <Navbar />
-      <Hero />
-      <About/>
+  <div className="App scroll-smooth">
+    <Navbar />
+    <Hero />
+    <About />
   </div>
-  ):(<Preloader />)
+) : (
+  <Preloader />
+);
 }
 
 export default App;

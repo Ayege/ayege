@@ -13,11 +13,11 @@ function Navbar() {
       <h1 className="w-full text-3xl font-bold text-picton-blue">Ayege.</h1>
       <ul className="hidden md:flex">
         <motion.li
-          className="p-4 transition delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-picton-blue duration-200"
+          className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-picton-blue duration-200"
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           animate={{ y: [-100, 0], opacity: 1 }}
-          transition={{ ease: "easeIn", duration: "1.5", delay: ".2" }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".2", velocity:"20"}}
         >
           About
         </motion.li>
@@ -26,7 +26,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           animate={{ y: [-100, 0], opacity: 1 }}
-          transition={{ ease: "easeIn", duration: "1.5", delay: ".3" }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".3", velocity:"20" }}
         >
           Skills
         </motion.li>
@@ -35,7 +35,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           animate={{ y: [-100, 0], opacity: 1 }}
-          transition={{ ease: "easeIn", duration: "1.5", delay: ".4" }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".4", velocity:"20" }}
         >
           Projects
         </motion.li>
@@ -44,7 +44,7 @@ function Navbar() {
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
           animate={{ y: [-100, 0], opacity: 1 }}
-          transition={{ ease: "easeIn", duration: "1.5", delay: ".5" }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".5", velocity:"20" }}
         >
           Contact
         </motion.li>

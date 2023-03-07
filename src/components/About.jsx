@@ -5,7 +5,7 @@ import Typed from "react-typed";
 
 function About() {
   return (
-    <div className="w-full bg-white py-10 px-4 font-sans">
+    <div className="w-full bg-white py-8 px-4 font-sans">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 relative">
         <motion.img
           initial={{ opacity: 0 }}

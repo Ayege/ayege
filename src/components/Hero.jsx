@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <main className="bg-eerie-black font-sans">
+    <main className="bg-eerie-black font-sans clip-path-about">
       <div className="relative px-6 lg:px-8">
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-50">
           <div className="text-center ">
@@ -53,7 +53,7 @@ function Hero() {
               initial={{ opacity: 0 }}
               animate={{
                 opacity: 1,
-                transition: { duration: 2.2, delay: 1.2},
+                transition: { duration: 2.2, delay: 1.2 },
               }}
               exit={{ opacity: 0 }}
             >

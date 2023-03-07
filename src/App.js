@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Preloader from "./components/Preloader";
 import { useState } from "react";
 import { useEffect } from "react";
+import About from "./components/About";
 
 function App() {
 
@@ -21,6 +22,7 @@ return !isLoading ? (
   <div className="App">
       <Navbar />
       <Hero />
+      <About/>
   </div>
   ):(<Preloader />)
 }

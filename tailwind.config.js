@@ -10,8 +10,8 @@ module.exports = {
         "yellow-green": "#8BC34A",
         'amber': "#FFC107",
       },
-      fontFamily:{
-        'sans': ['ui-sans-serif', 'system-ui']
+      fontFamily: {
+        sans: ["ui-sans-serif", "system-ui"],
       },
       backgroundSize: {
         "size-200": "200% 200%",
@@ -19,7 +19,7 @@ module.exports = {
       backgroundPosition: {
         "pos-0": "0% 0%",
         "pos-100": "100% 100%",
-      },
+      }
     },
   },
   plugins: [],

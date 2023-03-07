@@ -13,23 +13,41 @@ function Navbar() {
       <h1 className="w-full text-3xl font-bold text-picton-blue">Ayege.</h1>
       <ul className="hidden md:flex">
         <motion.li
-          className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-picton-blue duration-200"
+          className="p-4 transition delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-picton-blue duration-200"
           exit={{ opacity: 0 }}
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
+          animate={{ y: [-100, 0], opacity: 1 }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".2" }}
         >
           About
         </motion.li>
-        <li className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-yellow-green duration-200 ">
+        <motion.li
+          className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110   hover:bg-yellow-green duration-200 "
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ y: [-100, 0], opacity: 1 }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".3" }}
+        >
           Skills
-        </li>
-        <li className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-amber duration-200">
+        </motion.li>
+        <motion.li
+          className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-amber duration-200"
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ y: [-100, 0], opacity: 1 }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".4" }}
+        >
           Projects
-        </li>
-        <li className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-vermillion duration-200">
+        </motion.li>
+        <motion.li
+          className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-vermillion duration-200"
+          exit={{ opacity: 0 }}
+          initial={{ opacity: 0 }}
+          animate={{ y: [-100, 0], opacity: 1 }}
+          transition={{ ease: "easeIn", duration: "1.5", delay: ".5" }}
+        >
           Contact
-        </li>
+        </motion.li>
       </ul>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? (

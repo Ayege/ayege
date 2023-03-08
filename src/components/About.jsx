@@ -4,16 +4,16 @@ import Typed from "react-typed";
 
 function About() {
   return (
-    <div className="w-full bg-white py-8 px-4 font-sans">
+    <div className="w-full bg-white px-4 font-sans">
       <div className="max-w-[1240px] mx-auto grid md:grid-cols-2">
         <div className="animate-fade-in">
           <img
             className="w-[500px] mx-auto rounded-full transition-all duration-500 bg-gradient-to-t to-picton-blue via-amber from-vermillion bg-size-200 bg-pos-0 hover:bg-pos-100  z-10"
             src={AboutMe}
-            alt="/"
+            alt="Ayesha the developer"
           ></img>
         </div>
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center md:mx-4">
           <p className="text-picton-blue font-bold ">01. ABOUT ME</p>
           <h1 className="text-yellow-green md:text-4xl sm:text-3xl text-2xl font-bold py-2">
             A{" "}
@@ -56,7 +56,7 @@ function About() {
             can be a force for good.
           </p>
           <button className="bg-eerie-black text-amber w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3 hover:animate-pulse">
-            Download CV
+          <a href="https://drive.google.com/file/d/17xqwjQVPIpgEns4OXtgUx7VL1s37EDWv/view?usp=sharing" download="Ayesha Yege - PM and Web Dev">Download CV</a>
           </button>
         </div>
       </div>

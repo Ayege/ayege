@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import { motion } from "framer-motion";
+import Logo from "../assets/logo.png";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -10,7 +11,7 @@ function Navbar() {
   };
   return (
     <div className="flex font-sans justify-between items-center h-24 mx-auto px-4 bg-eerie-black text-white">
-      <h1 className="w-full text-3xl font-bold text-picton-blue">Ayege.</h1>
+      <img src={Logo}className="w-[100px]"></img>
       <ul className="hidden md:flex">
         <motion.li
           className="p-4 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  hover:bg-picton-blue duration-200"

@@ -4,6 +4,7 @@ import Preloader from "./components/Preloader";
 import { useState } from "react";
 import { useEffect } from "react";
 import About from "./components/About";
+import Skills from "./components/Skills";
 
 function App() {
 
@@ -23,6 +24,7 @@ return !isLoading ? (
     <Navbar />
     <Hero />
     <About />
+    <Skills/>
   </div>
 ) : (
   <Preloader />

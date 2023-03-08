@@ -6,7 +6,12 @@
 
    .clip-path-about {
 
-        clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+   }
+   .clip-path-skills {
+
+      clip-path: polygon(0 20%, 25% 40%, 50% 20%, 75% 40%, 100% 20%, 100% 100%, 0 100%);
+
    }
 
 }
@@ -24,4 +29,5 @@
  .animate-fade-in {
    animation-name: fade-in;
    animation-duration: 2s;
+   animation-delay: 0.5s;
  }
